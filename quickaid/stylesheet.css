@@ -1,0 +1,91 @@
+body, html { 
+  height: 100%; 
+  margin: 0; 
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.background{ 
+  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  z-index: -1; 
+}
+footer{
+  padding-top: 159px;
+}
+.blur {
+  backdrop-filter: opacity(0.7);
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 0; 
+}
+.text-container { 
+    text-align: left; 
+}
+.first-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  background-color: #4fd7b7;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.first-ul li {
+  display: inline;
+  float: right;
+  border-right: 1px solid #bbb;
+}
+.first-ul a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.first-ul li a:hover {
+  background-color: #287d69;
+}
+.first-ul .active {
+}
+.first-ul li:last-child {
+  border-right: none;
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.gallery {
+  margin: 40px;
+  border: 5px solid #4fd7b7;
+  float: left;
+  width: 180px;
+  background-color: #4fd7b7; 
+  justify-content: center; 
+  align-items: center;
+}
+.gallery img:hover {
+  opacity: 0.8; 
+  transform: scale(1.1); 
+} 
+div.gallery:hover {
+  border: 5px solid #4fd7b7;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px; 
+}
+
+
